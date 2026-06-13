@@ -280,7 +280,7 @@ class Scene_5_OntologyLayer(Scene):
         self.play(Create(edges))
         self.play(Write(edge_labels))
 
-        brain_circ = Circle(radius=3, color=PALETTE["dim"], stroke_dash_array=[5, 5]).move_to(ORIGIN)
+        brain_circ = Circle(radius=3, color=PALETTE["dim"]).move_to(ORIGIN).set_stroke(width=3)
         self.play(Create(brain_circ))
         self.play(Indicate(brain_circ))
 
